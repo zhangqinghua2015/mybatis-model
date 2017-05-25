@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+  	<property name="javaFileEncoding" value="UTF-8"/>
+  	<commentGenerator type="com.zqh.base.MyCommentGenerator">
+    </commentGenerator>
+    <jdbcConnection connectionURL="" 
+    driverClass="com.mysql.jdbc.Driver" 
+    userId="" 
+    password="" />
+    <javaModelGenerator targetPackage="com.zqh.model" targetProject="./src/main/java" />
+    <sqlMapGenerator targetPackage="com.zqh.mapper" targetProject="./src/main/java" />
+    <javaClientGenerator targetPackage="com.zqh.dao" targetProject="./src/main/java" type="XMLMAPPER" />
+    <table tableName="acti_info" domainObjectName="ActiInfo">
+    </table>
+  </context>
+</generatorConfiguration>
